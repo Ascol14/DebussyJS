@@ -3,6 +3,21 @@
   "-//Recordare//DTD MusicXML 2.0 Partwise//EN"
   "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="2.0">
+  <work>
+    <work-number>N1</work-number>
+    <work-title>Exemple</work-title>
+  </work>
+  <identification>
+    <creator type="composer">Ascol57</creator>
+    <rights>Nothing</rights>
+    <encoding>
+      <encoding-date>2023-12-05</encoding-date>
+      <encoder>Ascol57</encoder>
+      <software>DebussyJS</software>
+      <encoding-description>MusicXML 1.0 example</encoding-description>
+    </encoding>
+    <source>Myself</source>
+  </identification>
   <part-list>
     <score-part id="P1">
       <part-name>Piano</part-name>
