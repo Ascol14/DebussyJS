@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const partitionManager = require('./xmlparser/index.js');
+const partitionManager = require('./Debussy-MusicXLM-Parser/index.js');
 const partition = new partitionManager()
 const fs = require('fs')
 
