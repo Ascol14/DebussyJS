@@ -1,27 +1,20 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const xml2js = require('xml2js');
-const fs = require('fs');
-const parser = new xml2js.Parser({ attrkey: "ATTR" });
-
-
+const partitionManager = require('./xmlparser/index.js');
+const partition = new partitionManager()
+const fs = require('fs')
 
 app.use('/', express.static('public'))
 
 app.get('/get', async (req, res) => {
-    file = fs.readFileSync('exemple.musicxml', 'utf8');
-
-    parser.parseString(file, function (error, result) {
-        if (error === null) {
-            console.log(result)
-
-            res.send(file)
-        }
-        else {
-            console.log(error);
-        }
-    });
+    file = await partition.loadFile('exemple.musicxml')
+    partition.Dfile.instruments[0].name = "Trompette"
+    partition.Dfile.infos.title = "Test"
+    partition.reloadjson()
+    console.log(partition.json["score-partwise"])
+    fs.writeFileSync('exemple2.musicxml', await partition.buildxml(), "utf-8")
+    res.send(file)
 })
 
 app.listen(port, () => {

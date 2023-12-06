@@ -2,50 +2,48 @@
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="4.0">
   <work>
-    <work-title>Exemple</work-title>
+    <work-title>Test</work-title>
   </work>
   <identification>
     <creator type="composer">Ascol57</creator>
     <encoding>
       <software>DebussyJS</software>
       <encoding-date>2023-12-05</encoding-date>
-      <supports element="accidental" type="yes" />
-      <supports element="beam" type="yes" />
-      <supports element="print" attribute="new-page" type="no" />
-      <supports element="print" attribute="new-system" type="no" />
-      <supports element="stem" type="yes" />
+      <supports element="accidental" type="yes"/>
+      <supports element="beam" type="yes"/>
+      <supports element="print" attribute="new-page" type="no"/>
+      <supports element="print" attribute="new-system" type="no"/>
+      <supports element="stem" type="yes"/>
     </encoding>
   </identification>
   <part-list>
     <score-part id="P1">
-      <part-name>Violon</part-name>
+      <part-name>Trompette</part-name>
       <part-abbreviation>Vln.</part-abbreviation>
       <score-instrument id="P1-I1">
         <instrument-name>Violon</instrument-name>
-        <instrument-sound>strings.violin</instrument-sound>
       </score-instrument>
-      <midi-device id="P1-I1" port="1"></midi-device>
       <midi-instrument id="P1-I1">
         <midi-channel>1</midi-channel>
         <midi-program>41</midi-program>
         <volume>78.7402</volume>
         <pan>0</pan>
       </midi-instrument>
+      <midi-device id="P1-I1" port="1"/>
     </score-part>
     <score-part id="P2">
       <part-name>Violon2</part-name>
       <part-abbreviation>Vln.2</part-abbreviation>
       <score-instrument id="P2-I1">
         <instrument-name>Violon</instrument-name>
-        <instrument-sound>strings.violin</instrument-sound>
       </score-instrument>
-      <midi-device id="P2-I1" port="1"></midi-device>
       <midi-instrument id="P2-I1">
         <midi-channel>1</midi-channel>
         <midi-program>41</midi-program>
         <volume>78.7402</volume>
         <pan>0</pan>
       </midi-instrument>
+      <midi-device id="P2-I1" port="1"/>
     </score-part>
   </part-list>
   <part id="P1">
