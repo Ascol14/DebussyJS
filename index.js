@@ -9,10 +9,7 @@ app.use('/', express.static('public'))
 
 app.get('/get', async (req, res) => {
     file = await partition.loadFile('exemple.musicxml')
-    partition.Dfile.instruments[0].name = "Trompette"
-    partition.Dfile.infos.title = "Test"
     partition.reloadjson()
-    console.log(partition.json["score-partwise"])
     fs.writeFileSync('exemple2.musicxml', await partition.buildxml(), "utf-8")
     res.send(file)
 })

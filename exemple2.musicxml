@@ -2,7 +2,7 @@
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="4.0">
   <work>
-    <work-title>Test</work-title>
+    <work-title>Exemple</work-title>
   </work>
   <identification>
     <creator type="composer">Ascol57</creator>
@@ -18,7 +18,7 @@
   </identification>
   <part-list>
     <score-part id="P1">
-      <part-name>Trompette</part-name>
+      <part-name>Violon</part-name>
       <part-abbreviation>Vln.</part-abbreviation>
       <score-instrument id="P1-I1">
         <instrument-name>Violon</instrument-name>
