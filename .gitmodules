@@ -1,6 +1,0 @@
-[submodule "Debussy-MusicXLM-Parser"]
-	path = Debussy-MusicXLM-Parser
-	url = https://github.com/DebussyJS/musicxml-parser.git
-[submodule "musicxml-parser"]
-	path = musicxml-parser
-	url = https://github.com/DebussyJS/musicxml-parser.git
